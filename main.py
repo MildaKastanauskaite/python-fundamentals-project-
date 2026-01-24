@@ -16,6 +16,23 @@ def get_user_age ():
         else:
            print("Please enter a valid age.")     
 
+def get_numbers():
+    numbers = []
+
+    while True:
+        value = input("Enter a number (or 'q' to finish): ")
+
+        if value.lower() == "q":
+            if len(numbers) == 0:
+                print("Please enter at least one number.")
+            else:
+                return numbers
+
+        elif value.isdigit():
+            numbers.append(int(value))
+        else:
+            print("Invalid input.")
+
 def main ():
     print ("Python Fundamentals Project started")
     
