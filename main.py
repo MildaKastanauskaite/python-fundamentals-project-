@@ -41,5 +41,10 @@ def main ():
 
     user_age = get_user_age()
     print ("Your age is", user_age)
-    
+
+    numbers = get_numbers()
+    print("You entered:", numbers)  
+
+     print("Program finished successfully.")    
+
 main()
